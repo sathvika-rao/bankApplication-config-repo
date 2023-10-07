@@ -6,6 +6,14 @@ spring:
         uri: lb://auth-service
         predicates:
         - Path=/api/authenticate/** 
+      - id: account-service
+        uri: lb://account-service
+        predicates:
+        - Path=/api/account/**
+      - id: credit-service
+        uri: lb://credit-service
+        predicates:
+        - Path=/api/credit/** 
         
 server:
   port: 9191
