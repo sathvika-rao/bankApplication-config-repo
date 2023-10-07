@@ -2,7 +2,7 @@ spring:
   datasource:
     username: newroot
     password: root
-    url: jdbc:mysql://localhost:3306/bankApp-account-service?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://localhost:3306/bankApp-account-service
     hikari:
       connection-timeout: 60000
       maximum-pool-size: 5
